@@ -6,3 +6,11 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql
 https://github.com/docker-java/docker-java
 
 http://joel-costigliola.github.io/assertj/assertj-db.html
+
+
+
+https://docs.docker.com/engine/reference/commandline/dockerd/
+
+* Run a MariaDB for test
+> docker-compose up -d 
+> docker-compose down

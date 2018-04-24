@@ -1,10 +1,11 @@
-package tw.phate.demo.tdd;
+package tw.phate.demo.tdd.test;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 import javax.sql.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
+import tw.phate.demo.tdd.CustomerDao;
 
 @Configuration
 public class TestConfig {
@@ -19,9 +20,9 @@ public class TestConfig {
   @Bean
   public DataSource dataSource() {
     MysqlDataSource dataSource = new MysqlDataSource();
-    dataSource.setURL("jdbc:mysql://localhost/cas");
-    dataSource.setUser("cas");
-    dataSource.setPassword("cas");
+    dataSource.setURL("jdbc:mysql://localhost/tdd_test");
+    dataSource.setUser("root");
+    dataSource.setPassword("root");
     return dataSource;
   }
 
