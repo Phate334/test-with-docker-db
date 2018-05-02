@@ -27,7 +27,11 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-jdbc')
     runtime('com.h2database:h2')
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile group: 'org.assertj', name: 'assertj-db', version: '1.2.0'
     testCompile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
+    testCompile('com.github.docker-java:docker-java:3.0.14') {
+        exclude group: 'org.glassfish.jersey.inject:jersey-hk2'
+    }
 }

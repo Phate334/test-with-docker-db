@@ -10,7 +10,3 @@ http://joel-costigliola.github.io/assertj/assertj-db.html
 
 
 https://docs.docker.com/engine/reference/commandline/dockerd/
-
-* Run a MariaDB for test
-> docker-compose up -d 
-> docker-compose down
